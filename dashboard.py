@@ -88,7 +88,7 @@ with st.sidebar:
     # Menambahkan foto
     st.markdown(
         "<div style='display: flex; justify-content: center;'>"
-        "<img src='https://github.com/adiwira09/dashboard_streamlit_e-commerce/blob/main/image/photo.png?raw=true' width='200'>"
+        "<img src='https://github.com/adiwira09/bike-sharing-analysis-streamlit/blob/main/photo.png?raw=true' width='200'>"
         "</div>",
         unsafe_allow_html=True
     )
