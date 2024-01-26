@@ -1,0 +1,9 @@
+[[pages]]
+path = "dashboard.py"
+name = "Overview Analysis"
+icon = ":chart:"
+
+[[pages]]
+path = "predicted.py"
+name = "Predicted"
+icon = ":books:"
