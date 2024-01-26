@@ -88,34 +88,33 @@ with st.sidebar:
     # Menambahkan foto
     st.markdown(
         "<div style='display: flex; justify-content: center;'>"
-        "<img src='https://github.com/adiwira09/bike-sharing-analysis-streamlit/blob/main/photo.png?raw=true' width='200'>"
+        "<img src='https://github.com/adiwira09/bike-sharing-analysis-streamlit/blob/main/photo.png?raw=true' width='180' style='border-radius: 50%;'>"
         "</div>",
         unsafe_allow_html=True
     )
     st.sidebar.header("Click for Profile:")
 
-    col1, col2 = st.sidebar.columns(2)
+    col1,col2,col3,col4,col5 = st.sidebar.columns(5)
     with col1:
         st.markdown(
             "<div style='display: flex;'>"
             "<a href='https://www.linkedin.com/in/nug-adiwira/' target='_blank'>"
-            "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png' width='80'>"
+            "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png' width='50'>"
             "<a/>"
             "</div>",
             unsafe_allow_html=True
         )
-    with col2:
-        
+    with col2: 
         st.markdown(
             "<div style='display: flex;'>"
             "<a href='https://www.github.com/adiwira09/' target='_blank'>"
-            "<img src='https://cdn-icons-png.flaticon.com/512/25/25231.png' width='80'>"
+            "<img src='https://cdn-icons-png.flaticon.com/512/25/25231.png' width='50'>"
             "<a/>"
             "</div>",
             unsafe_allow_html=True
             )
     # show_pages_from_config()
-st.title("Bike-sharing Rides Dashboard")
+st.title(":bicyclist: Bike-sharing Rides Dashboard :bicyclist:")
 
 col1, col2, col3 = st.columns(3)
 
