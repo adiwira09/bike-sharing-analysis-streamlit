@@ -225,6 +225,44 @@ with dashboard:
                  title='Weather Situation Count',
                  text='cnt')
     st.plotly_chart(fig7, use_container_width=True)
+    expander1 = st.expander(label="Conclusion")
+    expander2 = st.expander(label="Business Recommendation")
+    with expander1:
+            """
+            Based on the visualizations presented above, we can draw the following **conclusions** :
+            - Most people who use bike-sharing are registered users, making up around 70%, while about 30% are casual users.
+            - Examining the monthly trends over a 2-year period. Increases in bike-share rides are noticeable in January, March, May, July, August, and September. Conversely, decreases occur in February, April, June, October, and November.
+            - Looking at daily trends, the overall highest number of rentals, combining registered and casual users, happens on Fridays. But, if we separate the two groups, registered users rent more on weekdays, while casual users rent more on weekends.
+            - On hourly trends, bike-share rides increase from 5 am to 10 am and decrease in the afternoon and evening.
+            - The customer distribution based on seasons is most significant in the Fall season, accounting for about 80% of total rentals, spanning from early September to late November. This pattern holds true for both registered and casual users.
+            - Weather significantly impacts rental numbers. Clear weather attracts a higher number of bike-share rides, while worsening weather conditions result in fewer rentals.
+            """
+
+
+    with expander2:
+            st.markdown("""
+                        #### 1. User Engagement Strategies
+                        - Because most users are registered, let's use special plans to keep them interested and encourage more people to sign up.
+                        - For those who use bikes casually, we can create exciting offers or events on weekends to attract and keep them engaged.
+                        
+                        #### 2. Seasonal Marketing Campaigns:
+                        - Leverage the popularity of bike rentals during the Fall season by launching seasonal marketing campaigns. Highlight special offers, events, or features during this period.
+                        
+                        #### 3. Weather-Responsive Promotions:
+                        - Develop weather-specific promotions to capitalize on the impact of weather on bike rentals. Consider offering discounts on clear days to incentivize more users to rent bikes.
+                        
+                        #### 4. Weekday and Weekend Customization:
+                        - Customize the promotions, so on weekdays, focus on benefits for registered users who use bikes for commuting, and on weekends, offer special deals for casual users who ride for fun.
+                        
+                        #### 5. Hourly Promotions:
+                        - Introduce hourly promotions during peak hours from 5 am to 10 am to further boost bike rentals during these times. This could include discounted rates, special features, or loyalty programs.
+                        
+                        #### 6. Data-Driven Maintenance:
+                        - Utilize the insights from the analysis to optimize bike availability and maintenance schedules. Focus on ensuring a higher number of bikes are available during peak rental times and locations.
+                        
+                        #### 7. Community Events:
+                        - Organize community events during months with lower rental trends to stimulate interest and boost bike rentals during those periods.
+                        """)
 
 ##################################################################################################
 df_copy = df.copy()
