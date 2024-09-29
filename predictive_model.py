@@ -1,6 +1,5 @@
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
-# import xgboost
 from xgboost import XGBRegressor
 
 df = pd.read_csv('dataset/hour.csv')
